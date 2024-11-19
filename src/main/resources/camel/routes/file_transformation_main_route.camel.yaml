@@ -1,0 +1,41 @@
+- route:
+    id: route-8e5f
+    description: MainRoute
+    nodePrefixId: route-434
+    from:
+      id: from-9cfd
+      description: ReadJSONFile
+      uri: file
+      parameters:
+        directoryName: src/main/resources/sample_data
+        fileName: product-data.json
+        noop: true
+      steps:
+        - log:
+            id: log-37fc
+            message: This is the JSON content, ${body}
+            loggingLevel: INFO
+        - unmarshal:
+            id: unmarshal-d74f
+            json:
+              id: json-1f53
+              library: Jackson
+        - log:
+            id: log-76dc
+            message: Unmarshalled Output, ${body}
+            loggingLevel: INFO
+        - marshal:
+            id: marshal-8768
+            csv:
+              id: csv-5688
+        - log:
+            id: log-2e8e
+            message: Marshalled Output, ${body}
+            loggingLevel: INFO
+        - to:
+            id: to-f53e
+            description: WriteToCSV
+            uri: file
+            parameters:
+              directoryName: src/main/resources/sample_data
+              fileName: product-data.csv

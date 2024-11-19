@@ -1,0 +1,68 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '3.3.1'
+    id 'io.spring.dependency-management' version '1.1.5'
+    id 'com.github.davidmc24.gradle.plugin.avro' version '1.9.1'
+}
+
+group = 'com.demo'
+version = '1.0.0'
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_17
+}
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+    maven {
+        url 'https://packages.confluent.io/maven'
+    }
+
+}
+
+configurations {
+    configureEach {
+        // exclude logback from all the dependencies to use log4j2 as the standard
+        exclude group: 'org.springframework.boot', module: 'spring-boot-starter-logging'
+    }
+}
+
+dependencies {
+    // spring-boot-starter-* dependencies
+    implementation 'org.apache.camel.springboot:camel-spring-boot-starter:4.8.0'
+
+    // apache camel dependencies
+    implementation 'org.apache.camel.springboot:camel-bean-starter:4.8.0'
+    implementation 'org.apache.camel.springboot:camel-bean-validator-starter:4.8.0'
+    implementation 'org.apache.camel.springboot:camel-bindy-starter:4.8.0'
+    implementation 'org.apache.camel.springboot:camel-csimple-joor-starter:4.8.0'
+    implementation 'org.apache.camel.springboot:camel-direct-starter:4.8.0'
+    implementation 'org.apache.camel.springboot:camel-file-starter:4.8.0'
+    implementation 'org.apache.camel.springboot:camel-joor-starter:4.8.0'
+    implementation 'org.apache.camel.springboot:camel-log-starter:4.8.0'
+    implementation 'org.apache.camel.springboot:camel-mapstruct-starter:4.8.0'
+    implementation 'org.apache.camel.springboot:camel-timer-starter:4.8.0'
+    implementation 'org.apache.camel.springboot:camel-yaml-dsl-starter:4.8.0'
+    implementation 'org.apache.camel.springboot:camel-jackson-starter:4.8.1'
+    implementation 'org.apache.camel.springboot:camel-csv-starter:4.8.1'
+
+    // dto & model dependencies
+    implementation 'org.apache.commons:commons-lang3:3.17.0'
+
+    // mapper dependencies
+    implementation 'org.mapstruct:mapstruct:1.6.2'
+    annotationProcessor 'org.mapstruct:mapstruct-processor:1.6.2'
+
+    // logging dependencies
+    implementation 'org.springframework.boot:spring-boot-starter-log4j2:3.3.3'
+    implementation 'com.lmax:disruptor:4.0.0' // to support async logging
+
+    // test dependencies
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testImplementation 'org.apache.camel:camel-test-spring-junit5:4.8.0'
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}

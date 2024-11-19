@@ -1,0 +1,213 @@
+[
+  {
+    "productId": "56789",
+    "sellerId": "USBL",
+    "name": "Noise Cancelling Headphones",
+    "description": "High-quality noise cancelling headphones with Bluetooth connectivity and long battery life.",
+    "price": 129.99,
+    "currency": "USD",
+    "stock": 200,
+    "category": "Electronics",
+    "brand": "SoundPro",
+    "rating": 4.8,
+    "dimensions": {
+      "width": "7 inches",
+      "height": "8 inches",
+      "depth": "3 inches"
+    },
+    "weight": "0.8 lbs",
+    "releaseDate": "2022-11-10",
+    "tags": "wireless,bluetooth,noise-cancelling,headphones",
+    "warranty": "24 months"
+  },
+  {
+    "productId": "98765",
+    "sellerId": "USBL",
+    "name": "Smart LED TV",
+    "description": "50-inch 4K Ultra HD Smart LED TV with HDR support and multiple streaming app integrations.",
+    "price": 499.99,
+    "currency": "USD",
+    "stock": 75,
+    "category": "Electronics",
+    "brand": "TechSavvy",
+    "rating": 4.7,
+    "dimensions": {
+      "width": "50 inches",
+      "height": "30 inches",
+      "depth": "2 inches"
+    },
+    "weight": "20.5 lbs",
+    "releaseDate": "2023-01-25",
+    "tags": "smart,4K,HDR,TV",
+    "warranty": "12 months"
+  },
+  {
+    "productId": "34567",
+    "sellerId": "USBL",
+    "name": "Smart Home Assistant",
+    "description": "Voice-activated smart assistant for home automation and entertainment, compatible with smart devices.",
+    "price": 79.99,
+    "currency": "USD",
+    "stock": 300,
+    "category": "Electronics",
+    "brand": "HomeEase",
+    "rating": 4.3,
+    "dimensions": {
+      "width": "4 inches",
+      "height": "6 inches",
+      "depth": "4 inches"
+    },
+    "weight": "1.0 lbs",
+    "releaseDate": "2023-05-12",
+    "tags": "smart,voice-assistant,home-automation,bluetooth",
+    "warranty": "18 months"
+  },
+  {
+    "productId": "65432",
+    "sellerId": "USBL",
+    "name": "Portable Power Bank",
+    "description": "10,000mAh portable power bank for charging mobile devices on the go, with fast charging support.",
+    "price": 29.99,
+    "currency": "USD",
+    "stock": 500,
+    "category": "Electronics",
+    "brand": "GigaWare",
+    "rating": 4.6,
+    "dimensions": {
+      "width": "3 inches",
+      "height": "5 inches",
+      "depth": "0.5 inches"
+    },
+    "weight": "0.6 lbs",
+    "releaseDate": "2022-12-01",
+    "tags": "portable,fast-charging,power-bank",
+    "warranty": "12 months"
+  },
+  {
+    "productId": "87654",
+    "sellerId": "USBL",
+    "name": "Wireless Gaming Mouse",
+    "description": "Ergonomic wireless gaming mouse with customizable buttons and adjustable DPI settings.",
+    "price": 59.99,
+    "currency": "USD",
+    "stock": 150,
+    "category": "Electronics",
+    "brand": "PlayMate",
+    "rating": 4.4,
+    "dimensions": {
+      "width": "3 inches",
+      "height": "1.5 inches",
+      "depth": "5 inches"
+    },
+    "weight": "0.4 lbs",
+    "releaseDate": "2023-07-20",
+    "tags": "wireless,gaming,mouse,DPI-adjustable",
+    "warranty": "18 months"
+  },
+
+  {
+    "productId": "34512",
+    "sellerId": "USBL",
+    "name": "Smartphone Fast Charger",
+    "description": "20W fast charger compatible with most smartphones, includes USB-C to USB-A cable.",
+    "price": 24.99,
+    "currency": "USD",
+    "stock": 350,
+    "category": "Electronics",
+    "brand": "TechSavvy",
+    "rating": 4.7,
+    "dimensions": {
+      "width": "2 inches",
+      "height": "2 inches",
+      "depth": "1.5 inches"
+    },
+    "weight": "0.2 lbs",
+    "releaseDate": "2023-04-10",
+    "tags": "fast-charging,USB-C,portable,charger",
+    "warranty": "12 months"
+  },
+  {
+    "productId": "92153",
+    "sellerId": "USBL",
+    "name": "Bluetooth Earbuds",
+    "description": "Wireless in-ear Bluetooth earbuds with noise reduction and charging case.",
+    "price": 79.99,
+    "currency": "USD",
+    "stock": 400,
+    "category": "Electronics",
+    "brand": "SoundPro",
+    "rating": 4.5,
+    "dimensions": {
+      "width": "1 inches",
+      "height": "1 inches",
+      "depth": "0.5 inches"
+    },
+    "weight": "0.1 lbs",
+    "releaseDate": "2022-11-30",
+    "tags": "wireless,bluetooth,noise-reduction,earbuds",
+    "warranty": "18 months"
+  },
+  {
+    "productId": "78234",
+    "sellerId": "USBL",
+    "name": "4K Action Camera",
+    "description": "Waterproof 4K action camera with image stabilization and wide-angle lens for outdoor adventures.",
+    "price": 149.99,
+    "currency": "USD",
+    "stock": 120,
+    "category": "Electronics",
+    "brand": "PlayMate",
+    "rating": 4.6,
+    "dimensions": {
+      "width": "2.5 inches",
+      "height": "1.5 inches",
+      "depth": "1 inches"
+    },
+    "weight": "0.3 lbs",
+    "releaseDate": "2023-02-15",
+    "tags": "4K,waterproof,camera,action-camera",
+    "warranty": "24 months"
+  },
+  {
+    "productId": "61827",
+    "sellerId": "USBL",
+    "name": "Smart Thermostat",
+    "description": "Energy-efficient smart thermostat compatible with voice assistants and smartphone control.",
+    "price": 199.99,
+    "currency": "USD",
+    "stock": 50,
+    "category": "Electronics",
+    "brand": "HomeEase",
+    "rating": 4.8,
+    "dimensions": {
+      "width": "5 inches",
+      "height": "5 inches",
+      "depth": "1 inches"
+    },
+    "weight": "0.5 lbs",
+    "releaseDate": "2023-06-05",
+    "tags": "smart,energy-efficient,thermostat,voice-control",
+    "warranty": "24 months"
+  },
+  {
+    "productId": "83625",
+    "sellerId": "USBL",
+    "name": "Fitness Smartwatch",
+    "description": "Waterproof fitness smartwatch with heart rate monitoring, GPS tracking, and long battery life.",
+    "price": 149.99,
+    "currency": "USD",
+    "stock": 220,
+    "category": "Electronics",
+    "brand": "FitLife",
+    "rating": 4.7,
+    "dimensions": {
+      "width": "1.5 inches",
+      "height": "1.5 inches",
+      "depth": "0.5 inches"
+    },
+    "weight": "0.2 lbs",
+    "releaseDate": "2023-08-01",
+    "tags": "smartwatch,fitness,GPS,heart-rate-monitor",
+    "warranty": "12 months"
+  }
+]
